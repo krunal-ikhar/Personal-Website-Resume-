@@ -2,14 +2,15 @@ body {
     margin: 0px;
     font-family: sans-serif;
     font-size: 30px;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );;
 }
 
 /* Body Header */
 
 #body-header {
     height: 65vh;
-    opacity: 1;
-    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg) ;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -191,6 +192,7 @@ section{
 
 #contact{
     background: linear-gradient(to top left, rgb(115, 115, 235),rgb(235, 120, 206));
+    
     margin-top: 50px;
     height: 65%;
     
@@ -263,24 +265,99 @@ section{
     
 }
 
-/* ---------------------------------------Experience section------------------------------ */
+/* ---------------------------------------Experience & Education  section------------------------------ */
 #experience{
     height: auto;
 }
 .timeline{
     position: relative;
     width: 75%;
-    border: 2px solid black;
+    
 }
 .timeline-box{
     position: relative;
-    border: 2px solid black;
+    
     margin: 5px;
     width: 40%;
     left: 5%;
     min-height: 150px;
+    padding: 0px;
 }
 
 .timeline-box:nth-child(2n){
     left: 53%;
+}
+
+.timeline-box-title{
+    font-size: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height:80px ;
+}
+.timeline-box-paragraph{
+    font-size: 16px;
+    color: #2857a4;
+}
+#title-name h1{
+       font-size: 22px;
+       text-align: right;
+       margin: 0px;
+       margin-bottom: 5px;
+       color:#2857a4;
+}
+#title-name p{
+    font-size: 14px;
+    text-align:right;
+    margin: 0px;
+    margin-bottom: 3px;
+
+}
+
+#education{
+    background: linear-gradient(to top left, rgb(224, 224, 235),rgb(231, 223, 233));
+    margin-top: 50px;
+}
+
+.timeline-divider{
+    width: 0;
+    height: 68%;
+    border:3px dashed lightslategray;
+    position:absolute;
+    top:10%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    
+    transform: rotate(90deg); 
+    position: sticky;  
+}
+
+/* ------------------------------------Projects--------------------------------------------------- */
+
+#portfolio{
+    margin-bottom: 150px;
+}
+.projects-container{
+    width:80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.projects{
+    width:100 px ;
+    height:300 px ;
+    border-radius: 40%;
+    box-shadow: 2px 2px 8px 9px lightgray;
+}
+
+.projects img{
+    width:100 px ;
+    height:300 px ;
+    border-radius: 40%;
 }
